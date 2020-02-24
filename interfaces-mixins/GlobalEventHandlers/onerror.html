@@ -4,12 +4,16 @@
 
   <script>
      window.onerror = function(msg, src, lin, col, err) {
-        alert(msg);
+        alert(msg + "\n" + src + " (" + lin + "/" + col + ")" + "\n" + err);
      }
   </script>
 
   <script>
       var 3 = 42;
+  </script>
+
+  <script>
+      va x = 42;
   </script>
 
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -18,7 +22,7 @@
 
 <body>
 
-  <div style='position:asolute'>
+  <div style='postion:asolute'> <!-- Note typos, apparently not recognized by error handler -->
   </div>
 
 </body>
